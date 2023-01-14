@@ -15,8 +15,10 @@ def draw():
 
 def on_key_down(key):
     if keyboard.up:
+        sounds.hi_hat.set_volume(0.03)
         sounds.hi_hat.play()
     if keyboard.down:
+        sounds.snare.set_volume(0.5)
         sounds.snare.play()
     if keyboard.right:
         sounds.bass.play()
