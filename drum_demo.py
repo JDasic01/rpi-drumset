@@ -9,12 +9,12 @@ TITLE = screen_title
 
 class Preset:
     def create_preset_folder(self, preset_name, preset_sounds):
-        '''Take the name of the folder and an array with presets, create the folder as the subfolder of "sounds"'''
-        pass
-     def choose_preset(name):
-        '''Find path to the preset with selected name'''
-        # path = ...
-        # return path
+         '''Take the name of the folder and an array with presets, create the folder as the subfolder f "sounds"'''
+      pass
+      def choose_preset(name):#
+     '''Find path to the preset with selected name'''
+         path = ...
+         return path
 
 def draw():
     screen.fill((192, 192, 192))
@@ -24,7 +24,7 @@ def draw():
 def on_key_down(key):
     # play(path_from_choose_preset)
     if keyboard.up:
-        sounds.hi_hat.set_volume(0.03)
+        sounds.hi_hat.play()
         sounds.hi_hat.play()
     if keyboard.down:
         sounds.snare.set_volume(0.5)
