@@ -1,28 +1,24 @@
 import pgzrun
-import os
-screen_title = "Drum Module Demo"
+from preset import *
+
 # Set Pygame Zero screen size and title
 WIDTH = 800
 HEIGHT = 600
-TITLE = screen_title
-# class Preset:
+TITLE = "Drum Module Demo"
 
-class Preset:
-    def create_preset_folder(self, preset_name, preset_sounds):
-         '''Take the name of the folder and an array with presets, create the folder as the subfolder f "sounds"'''
-      pass
-      def choose_preset(name):#
-     '''Find path to the preset with selected name'''
-         path = ...
-         return path
+def setup():
+    presets = create_preset_list()
+    preset_num = 0
 
 def draw():
+    '''Draw a pygame window'''
     screen.fill((192, 192, 192))
     screen.draw.text(screen_title, fontsize=40, center=(400,50), shadow=(1, 1), 
     color=(255, 255, 255), scolor="#202020")
 
+
 def on_key_down(key):
-    # play(path_from_choose_preset)
+    ''' for testing sounds with keyboard '''
     if keyboard.up:
         sounds.hi_hat.play()
         sounds.hi_hat.play()
@@ -31,4 +27,12 @@ def on_key_down(key):
         sounds.snare.play()
     if keyboard.right:
         sounds.bass.play()
+    if keyboard.left:
+
+
+
+
+
+
+
 pgzrun.go()

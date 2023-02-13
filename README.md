@@ -24,3 +24,4 @@ ride.wav
 - not all are neccesary, names can be changed but they need to be the same between directories
 Drum module will get the sounds based on folders in the folder sounds, so the name can be anything but it should have a number as a prefix so the user can modify the order of sounds.
 
+
